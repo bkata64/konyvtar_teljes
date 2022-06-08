@@ -1,0 +1,142 @@
+.validation {
+  display: block;
+  width: 100%;
+  color: red;
+  font-size: .7em;
+  padding-left: 27%;
+}
+
+input[invalid="true"] {
+  border-color: red !important;
+}
+
+header span, header h1 {
+  display: inline;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table tr, table th, table td {
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+table th {
+  /*background-color: #c0c0c0;*/
+  background-color: #ffa07a;
+}
+
+table tr:nth-child(2n+1) {
+  background: #faf0ea
+  /*background: #faebd7;*/
+}
+
+header {
+  /*background-color: #dcdcdc;*/
+  background-color: #b22222;
+  color: #fff;
+  padding: 5px;
+  /*border: 1px solid #f5f5f5;*/
+  border: 1px solid #ffa500;
+}
+
+button {
+  padding: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  background-color: #dcdcdc;
+  border: 1px solid #c0c0c0;
+  border-radius: 25px 0 25px 0;
+}
+
+.functions a img {
+  width: 20px;
+}
+
+.functions {
+  text-align: center;
+}
+
+.form-panel {
+  margin: auto;
+  float: none;
+}
+
+/* Style the form - display items horizontally */
+#form-inside {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+/* Add some margins for each label */
+#form-inside label {
+  margin: 5px 10px 5px 0;
+}
+
+/* Style the input fields */
+#form-inside input {
+  vertical-align: middle;
+  margin: 5px 10px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Style the submit button */
+#form-inside button {
+  padding: 10px 20px;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  /*padding: 40px;*/
+}
+
+#form-inside button:hover {
+  background-color: royalblue;
+}
+
+select {
+  height: 35px;
+  border-color: #cdcdcd;
+}
+
+.checkbox-group {
+  margin: 20px 0 20px 10px;
+}
+
+form img {
+  width: 60%;
+  border-radius: 10px;
+  border: 1px solid orange;
+}
+
+textarea {
+  border-color: #cdcdcd;
+  height: 100px;
+  margin: 20px 0;
+}
+
+main {
+  overflow-y: auto;
+  height: 700px;
+}
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  #form-inside input {
+    margin: 10px 0;
+  }
+
+  #form-inside {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .p-t-s-10 {
+    padding-top: 10px;
+  }
+}

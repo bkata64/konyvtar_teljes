@@ -1,0 +1,189 @@
+#kategoria {
+  padding: 0px 0px 10px 0px;
+  /*width: calc(25% - 30px);*/
+  -webkit-box-shadow: 1px 3px 9px 0px rgba(0,0,0,0.73);
+  box-shadow: 1px 3px 9px 0px rgba(0,0,0,0.73);
+  background-color:  #fff8dc;
+  color: #8b4513;
+}
+
+#kategoria div {
+  padding-left: 15px;
+}
+
+#kategoria div input {
+  margin-bottom: 15px;
+}
+
+/* valamiért nem érvényesül */
+#kategoria div label {
+  cursor: pointer;
+}
+
+
+#tartalom {
+  padding-left: 5px;
+  width: calc(75% - 5px);
+}
+
+#tartalom div {
+  padding: 0 15px;
+}
+
+header span, header h1, header h2 {
+  display: inline;
+}
+
+header span img, a span img {
+  width: 25px;
+  position: relative; top: 3px;
+}
+
+ a span img {
+   top: 7px;
+   margin-right: 10px;
+ }
+
+table {
+  border-collapse: collapse;
+}
+
+/*table tr:not(.detail_table tr), table th:not(.detail_table th), table td:not(.detail_table td){
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+table th:not(.detail_table th) {
+  background-color: #c0c0c0;
+}
+
+table tr:nth-child(2n+1):not(.detail_table tr:nth-child(2n+1)) {
+  background: #faebd7;
+}
+
+.detail_table tr {
+  padding: 50px;
+}
+
+.detail_table th {
+  text-align: left;
+  padding-right: 50px;
+}*/
+
+table tr, table th, table td{
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+.detail_table tr, .detail_table th, .detail_table td {
+  padding: 5px;
+  border: 0;
+}
+
+table th {
+  background-color: #c0c0c0;
+}
+
+.detail_table th {
+  background: none;
+  text-align: left;
+  padding-right: 50px;
+}
+
+table tr:nth-child(2n+1) {
+  background: #faebd7;
+}
+
+.detail_table tr:nth-child(2n+1) {
+  background: none;
+}
+
+.msg {
+  margin: 20px 50px;
+  width: 90%;
+  line-height: 50px;
+}
+
+.error_msg {
+  background-color: red;
+  color: white;
+  font-weight:bold;
+}
+
+#table-content {
+  height: 400px;
+  overflow-y: auto;
+}
+
+.book-row {
+  cursor:pointer;
+}
+
+.book_img {
+  width: 100px;
+  margin-right: 20px;
+}
+
+header {
+  background-color: #dcdcdc;
+  padding: 5px;
+  border: 1px solid #f5f5f5;
+}
+
+.rejtett div, .rejtett header {
+  display: none;
+}
+
+.rejtett {
+  height: 300px;
+  border: 1px solid #c0c0c0;
+  width: 0;
+}
+
+#megse {
+  display: none;
+}
+
+/* saját szabályok
+main .kep, main .data {
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+main .data .col-3 {
+  font-weight: bold;
+}
+
+main .data .col-3, main .data .col-7 {
+  padding-bottom: 10px;
+}
+
+main .kep img {
+  max-width: 100%;
+}
+
+main.col-9 {
+  float: none;
+  margin: auto;
+  padding-left: 20px;
+  height: 700px;
+}
+
+.leiras {
+  font-weight: bold;
+  margin-top: 10px;
+}*/
+
+
+@media only screen and (max-width: 768px) {
+  #tartalom {
+    padding-left: 0px;
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  #tartalom div {
+    overflow-y: auto;
+    height: 300px;
+  }
+}
